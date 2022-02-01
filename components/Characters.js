@@ -28,7 +28,7 @@ const NavBar_Container = styled.div`
     color: #30403e;
     margin-right: 25px;
     @media (max-width: 40rem) {
-      font-size: 2rem;
+      font-size: 1.7rem;
     }
   }
   input {
@@ -36,7 +36,7 @@ const NavBar_Container = styled.div`
     border: 2px solid #ccc;
     border-radius: 5px;
     @media (max-width: 40rem) {
-      width: 40%;
+      width: 90%;
     }
   }
 `;

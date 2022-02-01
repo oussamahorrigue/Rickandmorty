@@ -61,6 +61,13 @@ const Episode = styled.div`
   align-items: center;
   weight: 10%;
 `;
+const Episode_container = styled.div`
+  @media (max-width: 770px) {
+    background-color: #ccc;
+    width: 100%;
+    text-align: center;
+  }
+`;
 
 const Character = ({ path }) => {
   const { data, error, loading } = useQuery(GET_CHARACTER, {
@@ -121,9 +128,9 @@ const Character = ({ path }) => {
           </Episode_Title>
           {data.character.episode.map((epi) => {
             return (
-              <div key={epi.id}>
+              <Episode_container key={epi.id}>
                 <Episode_Name>{epi.name}</Episode_Name>
-              </div>
+              </Episode_container>
             );
           })}
         </Episode>
