@@ -14,6 +14,9 @@ const Container = styled.div`
 `;
 const Description = styled.div`
   display: flex;
+  @media (max-width: 770px) {
+    display: block;
+  }
 `;
 const Name = styled.p`
   color: #145896;
@@ -38,6 +41,9 @@ const Image_Container = styled.div`
   margin-right: 35px;
   position: relative;
   overflow: hidden;
+  @media (max-width: 770px) {
+    margin-left: 55px;
+  }
   p {
     position: absolute;
     right: 10px;

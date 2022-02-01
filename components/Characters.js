@@ -27,11 +27,17 @@ const NavBar_Container = styled.div`
     font-size: 25px;
     color: #30403e;
     margin-right: 25px;
+    @media (max-width: 40rem) {
+      font-size: 2rem;
+    }
   }
   input {
     width: 70%;
     border: 2px solid #ccc;
     border-radius: 5px;
+    @media (max-width: 40rem) {
+      width: 40%;
+    }
   }
 `;
 const Image = styled.img`
